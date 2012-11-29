@@ -1,0 +1,14 @@
+{
+	"name": "Baidu Album Picker",
+	"description": "It's a image picker of Baidu Album!",
+	"version" : "1.1",
+	"manifest_version" : 2,
+	"permissions":["tabs","http://*/*","http://*.google.com/*"],
+	"content_scripts": [{ 
+		"js" : ["js/jquery.js", "js/eventPage.js"],
+		"css" : ["css/fav.css"],
+		"matches" : ["http://*/*"],
+		"exclude_matches" : ["http://xiangce.baidu.com/*", "http://tieba.baidu.com/p/*"],
+		"run_at": "document_end" }
+	]
+}
